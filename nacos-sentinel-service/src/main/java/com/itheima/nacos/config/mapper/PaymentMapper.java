@@ -11,5 +11,5 @@ public interface PaymentMapper {
     public int create(Payment payment);
     public Payment getPaymentById(@Param("id") Long id);
     public Payment selectByPrimaryKey(@Param("id") Long id);
-    public List<Payment> findAllPayment();
+    public List<Payment> selectAllPayment();
 }
