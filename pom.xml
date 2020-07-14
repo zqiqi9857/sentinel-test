@@ -15,9 +15,6 @@
       <module>nacos-config-client</module>
       <module>nacos-sentinel-service</module>
       <module>nacos-restful-provider9003</module>
-      <module>seata-order-service</module>
-      <module>seata-storage-service</module>
-      <module>seata-account-service</module>
   </modules>
 
 
