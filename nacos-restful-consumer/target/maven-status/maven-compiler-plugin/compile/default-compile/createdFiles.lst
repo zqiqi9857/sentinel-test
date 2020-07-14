@@ -1,0 +1,8 @@
+com\itheima\nacos\consumer\service\PaymentFallbackService.class
+com\itheima\nacos\consumer\service\PaymentService.class
+com\itheima\nacos\consumer\controller\CircleBreakerController.class
+com\itheima\nacos\consumer\config\ApplicationContextConfig.class
+com\itheima\nacos\consumer\controller\RestConsumerController.class
+com\itheima\nacos\consumer\utils\CommonResult.class
+com\itheima\nacos\consumer\SpringRestConsumerBoots.class
+com\itheima\nacos\consumer\Entity\Payment.class

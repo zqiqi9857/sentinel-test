@@ -1,0 +1,24 @@
+server:
+  port: 83
+
+##在服务提供工程中配置nacos服务发现相关的配置
+spring:
+  application:
+    name: nacos-restful-consumer  #服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848  #服务发现中心地址
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080 #配置Sentinel dashboard地址
+        port: 8719 #默认8719端口，假如被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口
+#消费者将要去访问的微服务名称(注册成功进nacos的微服务提供者)
+###配置服务提供方地址(IP和端口)
+service-url:
+  nacos-user-service: http://nacos-restful-provider
+
+##激活sentinel对feign的支持
+feign:
+  sentinel:
+    enabled: true

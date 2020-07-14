@@ -1,0 +1,4 @@
+com\itheima\nacos\provider\utils\CommonResult.class
+com\itheima\nacos\provider\Entity\Payment.class
+com\itheima\nacos\provider\PaymentMain9003.class
+com\itheima\nacos\provider\controller\PaymentController.class

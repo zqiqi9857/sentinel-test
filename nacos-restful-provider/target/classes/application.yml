@@ -1,0 +1,17 @@
+server:
+  port: 9001
+##在服务提供工程中配置nacos服务发现相关的配置
+spring:
+  application:
+    #name: nacos-restful-provider   #服务名称
+    name: nacos-payment-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848   #服务发现中心地址
+##把后面要监控的东西暴露出来的写法
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

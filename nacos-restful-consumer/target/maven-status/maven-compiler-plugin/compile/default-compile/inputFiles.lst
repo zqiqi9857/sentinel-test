@@ -1,0 +1,8 @@
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\service\PaymentService.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\SpringRestConsumerBoots.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\config\ApplicationContextConfig.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\controller\RestConsumerController.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\Entity\Payment.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\controller\CircleBreakerController.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\utils\CommonResult.java
+D:\ideal-workspace\nacos-discovery\nacos-restful-consumer\src\main\java\com\itheima\nacos\consumer\service\PaymentFallbackService.java

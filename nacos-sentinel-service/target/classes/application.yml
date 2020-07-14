@@ -1,0 +1,44 @@
+server:
+  port: 8401
+
+spring:
+  application:
+    name: nacos-sentinel-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #Nacos服务注册中心
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080 #配置Sentinel dashboard地址
+        port: 8719 #默认8719端口，假如被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud2020?characterEncoding=utf8&useSSL=false&useUnicode=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    ds1:
+      nacos:
+        server-addr: 127.0.0.1:8848 #Nacos服务注册中心
+        dataId: nacos-sentinel-service
+        groupId: DEFAULT_GROUP
+        data-type: json
+        rule-type: flow
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.itheima.nacos.config.entity  #所有entity别名所在包
+
+#监控点留出来
+management:
+  endpoints:
+    web:
+      exposure:
+        incloud: '*'
+##激活sentinel对feign的支持
+feign:
+  sentinel:
+    enabled: true

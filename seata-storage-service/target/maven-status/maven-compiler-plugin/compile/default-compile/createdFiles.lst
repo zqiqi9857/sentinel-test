@@ -1,0 +1,9 @@
+com\itheima\nacos\config\config\MyBatisConfig.class
+com\itheima\nacos\config\dao\StorageMapper.class
+com\itheima\nacos\config\controller\StorageController.class
+com\itheima\nacos\config\service\Impl\StorageServiceImpl.class
+com\itheima\nacos\config\service\StorageService.class
+com\itheima\nacos\config\config\DataSourceProxyConfig.class
+com\itheima\nacos\config\SeataStorageServiceApp.class
+com\itheima\nacos\config\utils\Result.class
+com\itheima\nacos\config\domain\Storage.class
